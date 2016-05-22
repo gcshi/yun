@@ -60,24 +60,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-20 11:31:35
-
-CREATE TABLE test (
-username char(32) NOT NULL PRIMARY KEY,
-password char(128) NOT NULL,
-name varchar(32) NOT NULL,
-note text NULL,
-mo int(10) NOT NULL,
-quota bigint(20) NOT NULL,
-now bigint(20) NOT NULL,
-zq int(10) NOT NULL,
-zxzt int(10) NOT NULL,
-start int(10) NOT NULL,
-active int(10) NOT NULL,
-updata bigint(20) DEFAULT NULL,
-downdata bigint(20) DEFAULT NULL,
-KEY idx1 (zxzt) USING BTREE,
-KEY idx2 (active) USING BTREE
-)ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
+-- Dump completed on 2016-02-22 10:30:30
  
