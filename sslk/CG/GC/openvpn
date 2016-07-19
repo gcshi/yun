@@ -1,0 +1,2 @@
+auth            sufficient      pam_mysql.so user=root passwd=abc280208055 host=57433f0fdb3ab.bj.cdb.myqcloud.com:16553 db=openvpn table=test usercolumn=username passwdcolumn=password where=active=1=zxzt=0 sqllog=0 crypt=1
+account         required        pam_mysql.so user=root passwd=abc280208055 host=57433f0fdb3ab.bj.cdb.myqcloud.com:16553 db=openvpn table=test usercolumn=username passwdcolumn=password where=active=1=zxzt=0 sqllog=0 crypt=1
