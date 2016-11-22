@@ -10,4 +10,4 @@ chmod +x /etc/openvpn/test.sh
 gzexe /etc/openvpn/test.sh&&rm -f /etc/openvpn/test.sh~
 service crond start
 rm -f remove.sh
-echo "自动清内存已开启....."
+echo "自动清内存已开启，但不计算天数....."
