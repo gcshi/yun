@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     <!-- SP EL 表达式 -->
+     <!-- 基本常量 -->
+	<bean id="bean1" class="com.cwj95.demo.Spring.UselModel">
+				<property name="username" value="#{1}"></property>
+	 <!-- 其他对象 -->	
+				<property name="password" value="#{dataSource}"></property>
+				<property name="password" value="#{dataSource.user}"></property>
+				<property name="password" value="#{dataSource.toString()}"></property>
+	<!-- 运算符号  -->		
+				<property name="jiujiu" value="#{2+2}"></property>
+	</bean>
+</beans>

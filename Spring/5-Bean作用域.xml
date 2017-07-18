@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 
+    	scope="singleton"  :  IOC容器只会创建该bean定义的唯一实例
+    			"prototype"  :   每一次请求都会产生一个新的bean实例
+    			request    session   global   :   产生一个新的bean并只对该对象有郊
+     -->
+	<bean name="bean1" class="com.cwj95.demo.Spring.UselModel" scope="request">
+		<constructor-arg index="0" value="cwj"/>
+		<constructor-arg index="1" value="hehehe"/>
+	</bean>
+    
+    
+</beans>
