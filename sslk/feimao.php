@@ -25,10 +25,10 @@ header("Content-Type: text/html; charset=UTF-8");
 date_default_timezone_set('PRC');
 class Help {
 
-	private $username = "zjwdb_6070477";
-	private $password = "594262005zzQ";
+	private $username = "abc";
+	private $password = "abc";
 	private $url = "localhost";
-	private $db_connect = "zjwdb_6070477";
+	private $db_connect = "abc;
 	private $pdo = null;
 
 	function Help(){
